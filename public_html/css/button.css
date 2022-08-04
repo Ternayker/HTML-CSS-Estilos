@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/*-------------------Botão 1-------------------*/
+.bnt1 {
+    background: transparent;
+    color: #3bd9d9;
+    font-weight: 400;
+    font-size: 24px;
+    text-transform: uppercase;
+    padding: 16px 36px;
+    border: 2px solid #3bd9d9;
+    border-radius: 32px;
+    transform: translate(0);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.bnt1::before {
+    content: "";
+    position: absolute;
+    background: #3bd9d9;
+    width: 8px;
+    top: 0;
+    bottom: 0;
+    left: -32px;
+    transform: rotate(-16deg);
+    filter: blur(6px);
+}
+
+.bnt1:hover::before {
+    left: calc(100% + 32px);
+    transition: 0.75s;
+}
+/*---------------------------------------------*/
+
+/*-------------------Botão 2-------------------*/
+/*.btn2-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #2f3640;
+}*/
+
+.btn2-container i{
+    color: #fff;
+    font-size: 1rem;
+}
+
+.btn2-pulse {
+    background: #44bd32;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.btn2-pulse::before {
+    content: "";
+    position: absolute;
+    width: calc(100% + 40px); 
+    height: calc(100% + 40px);
+    border: 2px solid #44bd32;
+    border-radius: 50%;
+    animation: animate 1.5s linear infinite; 
+}
+
+.btn2-pulse::after {
+    content: "";
+    position: absolute;
+    width: calc(100% + 40px); 
+    height: calc(100% + 40px);
+    border: 2px solid #44bd32;
+    border-radius: 50%;
+    animation: animate 1.5s linear infinite; 
+    animation-delay: 0.4s;
+}
+
+@keyframes animate{
+    0% {transform:scale(0.5);
+        opacity:0;
+    }
+    50% {transform:scale(1);
+        opacity:1;
+    }
+    100% {transform:scale(1.4);
+        opacity:0;
+    }
+}
+/*---------------------------------------------*/
