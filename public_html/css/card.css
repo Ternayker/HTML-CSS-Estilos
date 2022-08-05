@@ -1,5 +1,12 @@
 @charset "UTF-8";
 
+body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/*-------------------Card 1-------------------*/
 .card1-conteiner{
     display: grid;
     position: relative;
@@ -33,3 +40,67 @@
     border: 3px;
     border-radius:5px; 
 }
+/*--------------------------------------------*/
+
+/*-------------------Card 2-------------------*/
+.card2{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    color: #A18A96;
+    background: linear-gradient(#00e5ff, #b400fb);
+    background-size: cover;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.card2-container{
+    position: absolute;
+    width: 100%;
+    padding: 10px;
+    left: 0;
+    bottom: 0;
+    background-color: #fff;
+    border-top-left-radius: 20px;
+    transform: translateY(70px);
+    transition: transform .25s;
+}
+
+.card2-container::before{
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: -47px;
+    right: -45px;
+    transform: rotate(-175deg);
+    border-radius: 50%;
+    box-shadow: inset 48px 48px #fff;
+}
+
+.card2-titulo{
+    color: #6A515E;
+    line-height: 15px;
+}
+
+.card2-subtitulo{
+    display: block;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.card2-descricao{
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+.card2:hover .card2-container{
+    transform: translateY(0);
+}
+
+.card2:hover .card2-descricao{
+    opacity: 1;
+    transition-delay: .25s;
+}
+/*--------------------------------------------*/
