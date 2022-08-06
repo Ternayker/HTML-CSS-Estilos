@@ -1,8 +1,9 @@
 @charset "UTF-8";
 
-/*-------------------Text 1-------------------*/
+/*-------------------Text 1--------------------*/
 .text1-container {
     display: flex;
+    justify-content: center;
 }
 
 .text1-static {
@@ -20,7 +21,7 @@
 
 .text1-dynamic li{
     list-style: none;
-    color: #16F37D;
+    color: #000;
     font-size: 24px;
     font-weight: 500;
     position: relative;
@@ -61,7 +62,7 @@
 }
 /*---------------------------------------------*/
 
-/*-------------------Text 2-------------------*/
+/*-------------------Text 2--------------------*/
 .text2-container{
     display: flex;
     justify-content: center;
@@ -126,7 +127,7 @@
 }
 /*---------------------------------------------*/
 
-/*-------------------Text 3-------------------*/
+/*-------------------Text 3--------------------*/
 .text3-container{
     display: flex;
     justify-content: center;
@@ -170,5 +171,45 @@
 
 .text3:nth-child(6){   
     animation-delay: .6s;
+}
+/*---------------------------------------------*/
+
+/*-------------------Text 4--------------------*/
+
+.text4-container{
+    display: flex;
+    justify-content: center;
+    line-height: 50px;
+    margin-top: 10px;
+}
+.text4{
+    position: absolute;
+    color: #000;
+    font-size: 24px;
+    transform: translate(-50%, -50%);
+    animation: morph-effect 15s infinite ease-in-out;
+}
+
+.text4:nth-child(1){   
+    animation-delay: -15s;
+}
+
+.text4:nth-child(2){   
+    animation-delay: -10s;
+}
+
+.text4:nth-child(3){   
+    animation-delay: -5s;
+}
+
+@keyframes morph-effect{
+    0% ,20%, 100%{
+        filter: blur(0px);
+        opacity: 1;
+    }
+    40% ,80%{
+        filter: blur(16px);
+        opacity: 0;
+    }
 }
 /*---------------------------------------------*/
