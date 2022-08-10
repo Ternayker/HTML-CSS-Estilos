@@ -127,8 +127,8 @@ div{
 .bnt3::before{
     content: "";
     position: absolute;
-    width: 62px;
-    height: 200px;
+    width: 200px;
+    height: 62px;
     z-index: -1;
     border-radius: 48px;
     background-color: #00FF7F;

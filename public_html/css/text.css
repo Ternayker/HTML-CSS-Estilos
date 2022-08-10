@@ -213,3 +213,34 @@
     }
 }
 /*---------------------------------------------*/
+
+/*-------------------Text 5--------------------*/
+.text5-container{
+    text-align: center;
+    line-height: 50px;
+    margin-top: 30px;
+    font-family: Arial;
+}
+
+.text5-container::before{
+	content: 'Texto 5';
+	color: #00e5ff;
+	position: absolute;
+	border-right: .4rem solid;
+	animation: slide 3s linear infinite;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+@keyframes slide{
+	0%{
+		width: 0%;
+	}	
+	50%{
+		width: 8%;
+	}
+	100%{
+		width: 0%;
+	}
+}
+/*---------------------------------------------*/
