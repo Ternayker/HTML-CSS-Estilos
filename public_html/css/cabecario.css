@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+.cabecario{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    margin: auto auto 40px;
+    background: #b400fb;
+}
+
+.titulo{
+    font-family: cursive;
+    font-size: 30px;
+    margin: 25px 20px;
+}
+
+.cab-ul{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin: 60px 20px;
+    list-style: none;
+}
+
+.cab-ul a{
+    padding: 8px;
+    margin-right: 30px;
+    text-decoration: none;
+    font-family: Arial;
+    font-size: 20px;
+    border: solid 2px #000;
+    border-radius: 10px;
+    color:#000;
+    background: #9E55FF;
+}

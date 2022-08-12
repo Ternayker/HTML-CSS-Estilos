@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-body{
+section{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
