@@ -33,3 +33,38 @@
     color:#000;
     background: #9E55FF;
 }
+
+summary{
+    font-family: Arial;
+    font-weight: bold;
+}
+
+.caixa{
+    padding: 10px;
+    background: #4F4F4F;
+    border-radius: 5px;
+
+}
+.isTeg{
+    color: #FF7F00;
+}
+
+.isClasse{
+    color: #00AA00;
+}
+
+.isAspas{
+    color: #CD00CD;
+}
+
+.nameClasse{
+    color: #8EE5EE;
+}
+
+.textName{
+    color: #FFF;
+}
+
+.isTitle{
+    font-weight: bold;
+}
