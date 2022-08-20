@@ -537,7 +537,218 @@ and open the template in the editor.
                     </details>
                 </div>
             
-            
+            <!-- 5° BOTÂO -->
+            <div>
+                <button class="btn5">
+                    <span class="btn5-text">Button 5</span>
+                </button>
+                
+                    <details>
+                        <summary>Codigo</summary>
+                        <p class="isTitle">HTML</p>
+                        <p class="caixa">
+                            <span class="isTeg"><</span>
+                            <span class="isTeg">button</span>
+                            <span class="isClasse">class=</span>
+                            <span class="isAspas">"</span>
+                            <span class="nameClasse">btn</span>
+                            <span class="isAspas">"</span>
+                            <span class="isTeg">></span>
+                            <br>
+                            <span class="isTeg"><</span>
+                            <span class="isTeg">span</span>
+                            <span class="isClasse">class=</span>
+                            <span class="isAspas">"</span>
+                            <span class="nameClasse">btn-text</span>
+                            <span class="isAspas">"</span>
+                            <span class="isTeg">></span>
+                            <span class="textName">Button</span>
+                            <span class="isTeg"><</span>
+                            <span class="isTeg">/span></span>
+                            <br>
+                            <span class="isTeg"><</span>
+                            <span class="isTeg">/button></span>
+                        </p>
+                         <p class="isTitle">CSS</p>
+                        <p class="caixa">
+                            <span class="nameClasse">.btn</span>
+                            <span class="textName">{</span>
+                            <br>
+                            <span class="isTeg">position</span>	
+                            <span class="textName">: relative;</span>
+                            <br>
+                            <span class="isTeg">padding</span>
+                            <span class="textName">: 16px 36px;</span>
+                            <br>
+                            <span class="isTeg">font-size</span>
+                            <span class="textName">: 24px;</span>
+                            <br>
+                            <span class="isTeg">border-radius</span>
+                            <span class="textName">: 32px;</span>
+                            <br>
+                            <span class="isTeg">text-transform</span>
+                            <span class="textName">: uppercase;</span>
+                            <br>
+                            <span class="isTeg">background-color</span>
+                            <span class="textName">: #7DFFA7;</span>
+                            <br>
+                            <span class="isTeg">border</span>
+                            <span class="textName">: none;</span>
+                            <br>
+                            <span class="isTeg">overflow</span>
+                            <span class="textName">: hidden;</span>
+                            <br>
+                            <span class="textName">}</span>
+                            <br>
+                            
+                            <span class="nameClasse">.btn5-text</span>
+                            <span class="textName">{</span>
+                            <br>
+                            <span class="isTeg">position</span>	
+                            <span class="textName">: relative;</span>
+                            <br>
+                            <span class="isTeg">display</span>	
+                            <span class="textName">: flex;</span>
+                            <br>
+                            <span class="isTeg">column-gap</span>	
+                            <span class="textName">: 5px;</span>
+                            <br>
+                            <span class="isTeg">align-items</span>	
+                            <span class="textName">: center;</span>
+                            <br>
+                            <span class="isTeg">z-index</span>	
+                            <span class="textName">: 99;</span>
+                            <br>
+                            <span class="textName">}</span>
+                            <br>
+                            
+                            <span class="nameClasse">.btn5</span>
+                            <span class="textName">:hover</span>
+                            <span class="nameClasse"> .btn5-text</span>
+                            <span class="textName">{</span>
+                            <br>
+                            <span class="isTeg">animation</span>	
+                            <span class="textName">: start .25s, end .25s;</span>
+                            <br>
+                            <span class="textName">}</span>
+                            <br>
+                            
+                            <span class="nameClasse">.btn5</span>
+                            <span class="textName">::before</span>
+                            <span class="nameClasse"> .btn5</span>
+                            <span class="textName">::after{</span>
+                            <br>
+                            <span class="isTeg">content</span>	
+                            <span class="textName">: "";</span>
+                            <br>
+                            <span class="isTeg">content</span>	
+                            <span class="textName">: absolute;</span>
+                            <br>
+                            <span class="isTeg">position</span>	
+                            <span class="textName">: absolute;</span>
+                            <br>
+                            <span class="isTeg">top</span>	
+                            <span class="textName">: 0;</span>
+                            <br>
+                            <span class="isTeg">left</span>	
+                            <span class="textName">: 0;</span>
+                            <br>
+                            <span class="isTeg">background-color</span>	
+                            <span class="textName">: #FFC57A;</span>
+                            <br>
+                            <span class="isTeg">width</span>	
+                            <span class="textName">: 100%;</span>
+                            <br>
+                            <span class="isTeg">height</span>	
+                            <span class="textName">: 100%;</span>
+                            <br>
+                            <span class="textName">}</span>
+                            <br>
+                            
+                            <span class="nameClasse">.btn5</span>
+                            <span class="textName">::before{</span>
+                            <br>
+                            <span class="isTeg">transform</span>	
+                            <span class="textName">: translateY(100%);</span>
+                            <br>
+                            <span class="textName">}</span>
+                            <br>
+                            
+                            <span class="nameClasse">.btn5</span>
+                            <span class="textName">:hover::before{</span>
+                            <br>
+                            <span class="isTeg">transform</span>	
+                            <span class="textName">: translateY(0);</span>
+                            <br>
+                            <span class="isTeg">transition</span>	
+                            <span class="textName">: transform .25s;</span>
+                            <br>
+                            <span class="textName">}</span>
+                            <br>
+                            
+                            <span class="nameClasse">.btn5</span>
+                            <span class="textName">::after{</span>
+                            <br>
+                            <span class="isTeg">transform</span>	
+                            <span class="textName">: translateY(100%);</span>
+                            <br>
+                            <span class="isTeg">transition</span>	
+                            <span class="textName">: transform .25s;</span>
+                            <br>
+                            <span class="textName">}</span>
+                            <br>
+                            
+                            <span class="nameClasse">.btn5</span>
+                            <span class="textName">:hover::after{</span>
+                            <br>
+                            <span class="isTeg">transform</span>	
+                            <span class="textName">: translateY(0);</span>
+                            <br>
+                            <span class="isTeg">transition</span>	
+                            <span class="textName">: transform .25s;</span>
+                            <br>
+                            <span class="textName">}</span>
+                            <br>
+                            
+                            <span class="nameClasse">@keyframes</span>
+                            <span class="textName">start{</span>
+                            <br>
+                            <span class="isTeg">100%</span>
+                            <span class="textName">{</span>
+                            <span class="textName"> transform: translateY(-100%);</span>
+                            <br>
+                            <span class="textName"> opacity: 0;</span>
+                            <br>
+                            <span class="textName">}</span>
+                            <br>
+                            <span class="textName">}</span>
+                            <br>
+                            
+                            <span class="nameClasse">@keyframes</span>
+                            <span class="textName">start{</span>
+                            <br>
+                            <span class="isTeg">0%</span>
+                            <span class="textName">{</span>
+                            <span class="textName"> transform: translateY(100%);</span>
+                            <br>
+                            <span class="textName"> opacity: 0;</span>
+                            <br>
+                            <span class="textName">}</span>
+                            <br>
+                            <span class="isTeg">100%</span>
+                            <span class="textName">{</span>
+                            <span class="textName"> transform: translateY(0);</span>
+                            <br>
+                            <span class="textName"> opacity: 1;</span>
+                            <br>
+                            <span class="textName">}</span>
+                            <br>
+                            <span class="textName">}</span>
+                            <br>
+                            
+                        </p>
+                    </details>
+                
         </section>
     </body>
 </html>

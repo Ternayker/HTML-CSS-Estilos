@@ -1,5 +1,19 @@
 @charset "UTF-8";
 
+body::-webkit-scrollbar{
+    width: 16px;
+}
+
+body::-webkit-scrollbar-track{
+    background: #305473;
+    border-radius: 16px;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: #B400Fb;
+    border-radius: 16px;
+}
+
 .cabecario{
     display: flex;
     width: 100%;
@@ -34,9 +48,13 @@
     background: #9E55FF;
 }
 
+details{
+    margin-bottom: 40px;
+}
 summary{
     font-family: Arial;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .caixa{
@@ -68,3 +86,4 @@ summary{
 .isTitle{
     font-weight: bold;
 }
+

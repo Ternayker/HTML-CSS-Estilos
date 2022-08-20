@@ -7,7 +7,7 @@ section{
 }
 
 button{
-    margin-left: 40px;
+    margin-left: 80px;
     margin-bottom: 40px;
 }
 
@@ -15,7 +15,9 @@ div{
     margin-left: 40px;
 
 }
-
+details{
+    margin-left: 50px;
+}
 /*-------------------Botão 1-------------------*/
 .bnt1 {
     background: transparent;
@@ -57,6 +59,9 @@ div{
     height: 100vh;
     background: #2f3640;
 }*/
+.btn2-container details{
+    margin-top: 30px;
+}
 
 .btn2-container i{
     color: #fff;
@@ -173,5 +178,75 @@ div{
 
 .bnt4:hover::before{
     transform: scaleX(1.1) scaleY(1.1);
+}
+/*---------------------------------------------*/
+
+/*-------------------Botão 5-------------------*/
+.btn5{
+    position: relative;
+    display: inline-block;
+    padding: 16px 36px;
+    font-size: 24px;
+    border-radius: 32px;
+    text-transform: uppercase;
+    background-color: #7DFFA7;
+    border: none;
+    overflow: hidden;
+}
+
+.btn5-text{
+    position: relative;
+    display: flex;
+    column-gap: 5px;
+    align-items: center;
+    z-index: 99;
+}
+
+.btn5:hover .btn5-text{
+    animation: start .25s, end .25s;
+}
+
+.btn5::before, .btn5::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #FFC57A;
+    width: 100%;
+    height: 100%;
+}
+
+.btn5::before{
+    transform: translateY(100%);
+}
+
+.btn5:hover::before{
+    transform: translateY(0);
+    transition: transform .25s;
+}
+
+.btn5::after{
+    transform: translateY(100%);
+    transition: transform .25s;
+}
+
+.btn5:hover::after{
+    transform: translateY(0);
+    transition: transform .25s;
+}
+
+@keyframes start{
+    100%{ transform: translateY(-100%);
+          opacity: 0;
+    }
+}
+
+@keyframes end{
+    0%{ transform: translateY(100%);
+          opacity: 0;
+    }
+    100%{ transform: translateY(0);
+          opacity: 1;
+    }
 }
 /*---------------------------------------------*/
